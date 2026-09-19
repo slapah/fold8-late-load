@@ -1,0 +1,7 @@
+This repository redistributes:
+
+- Official KernelSU manager v3.2.5 (32525), GPL-3.0, https://github.com/tiann/KernelSU
+- Modified Vector manager and daemon based on JingMatrix/Vector (GPL-3.0), https://github.com/JingMatrix/Vector
+- LSPromise APK as used on SM-F971U
+
+Modifications to Vector are described in README.md.
