@@ -2,3 +2,8 @@
 *.keystore
 *.idsig
 *.log
+src/**/build/
+src/**/.gradle/
+src/**/.cxx/
+src/**/.idea/
+src/**/*.iml

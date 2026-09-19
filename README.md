@@ -37,6 +37,18 @@ This tree changes:
 
 Upstream Vector: [JingMatrix/Vector](https://github.com/JingMatrix/Vector) `efb82883` (v2.2 / 3111). Official KernelSU manager: [tiann/KernelSU](https://github.com/tiann/KernelSU) v3.2.5.
 
+## Sources
+
+Vendored under [`src/`](src/):
+
+| Tree | Upstream | Notes |
+|------|----------|--------|
+| [`src/lspromise`](src/lspromise) | [slapah/lspromise](https://github.com/slapah/lspromise) `9cf09d7` | LSPromise app (userspace + kernel stages). |
+| [`src/kernelsu`](src/kernelsu) | [slapah/KernelSU](https://github.com/slapah/KernelSU) branch `kdp-trace` `138b1cf` | LKM + ksud used on this Fold 8. |
+| [`src/vector`](src/vector) | [JingMatrix/Vector](https://github.com/JingMatrix/Vector) `efb82883` | Includes the late-load manager/daemon patches below. |
+
+Watchdog scripts used on-device: [`scripts/service.sh`](scripts/service.sh), [`scripts/daemon-watchdog.sh`](scripts/daemon-watchdog.sh).
+
 ## SHA-256
 
 See [`packages/SHA256SUMS`](packages/SHA256SUMS).

@@ -1,0 +1,1 @@
+savedcmd_/src/selinux_off.ko := ld.lld -r -EL  -maarch64elf -z norelro --compress-debug-sections=zstd -z noexecstack --build-id=sha1  -T ./scripts/module.lds -o /src/selinux_off.ko /src/selinux_off.o /src/selinux_off.mod.o /src/.module-common.o;  true
