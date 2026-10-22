@@ -6,16 +6,16 @@
  * to load here). Loaded by vendor_modprobe via init_module on the patched
  * vendor lib; sets selinux_state.enforcing = 0.
  *
- * Target: 6.12.58-android16-6-pab9584b-abogkiF971USQU1AZFW-4k
+ * Target: 6.12.58-android16-6-p5e742b0-abogkiF971USQU3AZI5-4k (same kernel build as AZI8)
  *   _printk        = base + 0xceddc    (exported anchor; runtime slide source)
- *   selinux_state  = base + 0x28ebc80  (enforcing @ +0, per BTF)
+ *   selinux_state  = base + 0x28fbc80  (enforcing @ +0, per BTF)
  */
 #include <linux/init.h>
 #include <linux/module.h>
 
 #define KIMAGE_BASE       0xffffffc080000000UL
 #define OFF_PRINTK        0xceddcUL
-#define OFF_SELINUX_STATE 0x28ebc80UL
+#define OFF_SELINUX_STATE 0x28fbc80UL
 
 extern int _printk(const char *fmt, ...); /* EXPORT_SYMBOL; resolved by the loader */
 
